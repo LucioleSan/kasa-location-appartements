@@ -3,7 +3,7 @@ import About from "./pages/About";
 import Listing from "./pages/Listing";
 import Home from "./pages/Home";
 import PageNotFound from "./pages/PageNotFound";
-// import Footer from ".components/footer/Footer";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 
 function App() {
@@ -12,11 +12,11 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Listing/:id" element={<Listing />} />
+        <Route path="/listing/:id" element={<Listing />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
