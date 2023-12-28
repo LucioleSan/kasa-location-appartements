@@ -1,0 +1,21 @@
+.error{
+  @include verticalCenter;
+  color: $color-primary;
+  font-weight: bold;
+  h1{
+      font-size: 288px;
+      font-weight: 1500;
+      font-style: bold;
+      margin-bottom: 70px;
+      
+  }
+  p{
+      font-size: 36px;
+      margin-bottom: 180px;
+  }
+  a{
+      font-size: 18px;
+  color: $color-primary;
+
+  }
+}

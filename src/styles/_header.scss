@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff; 
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); 
+
+  &__logo {
+    height: 50px; 
+  }
+
+  &__nav {
+    
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #333; 
+    margin: 0 1rem;
+
+    &:hover {
+      color: #666; 
+    }
+  }
+}
