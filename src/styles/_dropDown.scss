@@ -1,0 +1,31 @@
+.dropDown{
+  margin: 40px auto;
+  color: white;
+  width: 65%;
+  transition-duration: 400ms;
+  font-size: 24px;
+  background-color:#FF6060;
+  border-radius: 5px;
+  
+  
+
+
+}
+
+.dropDown__header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      height: 52px;
+      cursor: pointer;
+      user-select: none;       
+      
+      
+}
+
+.dropDown__content{
+      color: white;
+      padding: 10px;
+      
+}
