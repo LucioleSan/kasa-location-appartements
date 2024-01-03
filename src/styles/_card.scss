@@ -1,0 +1,44 @@
+.gallery{
+  background: #f7f7f7;
+  margin: 50px 10%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 50px;
+  gap: 50px;
+  
+  .card{
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      position: relative;
+      width: 400px;
+      height: 400px;
+      border-radius: 10px; 
+      background-image: linear-gradient(to bottom, #ff6060, #bc4652, #7a313d, #3e1d24, #000000);
+
+      h3{
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          width: 60%;
+          font-size: 18px;
+          line-height: 25.67px;
+          color: white;
+      }
+      img{
+          object-fit: cover;
+          min-height: 10%;
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          opacity: 0.85;
+          transition-duration: 400ms;
+          &:hover{
+              opacity: 1;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+              transition-duration: 400ms;
+          }
+      }
+  }
+}

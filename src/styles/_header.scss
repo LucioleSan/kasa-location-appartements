@@ -2,25 +2,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   background-color: #fff; 
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); 
+  
 
   &__logo {
     height: 50px; 
+    margin-left: 10%;
   }
 
   &__nav {
-    
+    color: #FF6060;
+    margin-right: 7%;
+    font-size: 24px;
   }
 
   &__link {
     text-decoration: none;
-    color: #333; 
-    margin: 0 1rem;
+    margin: 0 3rem;
+    color: #FF6060;
 
     &:hover {
-      color: #666; 
+      text-decoration: underline;
     }
   }
 }
