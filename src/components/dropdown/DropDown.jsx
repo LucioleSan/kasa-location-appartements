@@ -3,7 +3,7 @@ import arrowUp from "../../assets/images/arrow_up.png";
 import arrowDown from "../../assets/images/arrow_down.png";
 
 const DropDown = ({ title, content, isList = false, open= false }) => {
-  // Using state to keep track of dropdown status (open or closed)
+  
   const [isOpen, setIsOpen] = useState(open);
 
   const toggleOpen = () => {
