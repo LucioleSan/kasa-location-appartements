@@ -12,15 +12,17 @@ const Card = () => {
 
   return (
     <section className="gallery">
-      {data.map((item, index) => (
+      {data.map((logement) => (
         <NavLink
-          to={/listing/ + item.id}
-          state={{ logement: data[index] }}
+          to={{
+            pathname: `/listing/${logement.id}`,
+            state: { logement: logement }
+          }}
           className="card"
-          key={item.id}
+          key={logement.id}
         >
-          <img src={item.cover} alt={item.title} />
-          <h3>{item.title}</h3>
+          <img src={logement.cover} alt={logement.title} />
+          <h3>{logement.title}</h3>
         </NavLink>
       ))}
     </section>
