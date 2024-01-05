@@ -2,6 +2,7 @@ import React from "react";
 import starEmpty from "../../assets/images/starEmpty.svg";
 import starFilled from "../../assets/images/starFilled.svg";
 
+
 const InfoAccommadation = ({
   title,
   location,
@@ -9,6 +10,7 @@ const InfoAccommadation = ({
   name,
   picture,
   rating,
+  cover,
 }) => {
   // RATING:----------------------------------------------------
   // transform string in number:
@@ -21,11 +23,14 @@ const InfoAccommadation = ({
   const emptyStars = Array.from(
     { length: 5 - ratingNum },
     (i) => i + ratingNum
+
   );
+
 // -------------------------------------------------------------
   return (
     <section className="sectionInfo">
       <div className="info">
+      <img src={cover} alt={`Couverture de ${title}`} /> 
         <h3 className="info__title">{title}</h3>
         <p className="info__location">{location}</p>
         {/* tags */}
