@@ -10,9 +10,8 @@ const InfoAccommadation = ({
   name,
   picture,
   rating,
-  cover,
 }) => {
-  // RATING:----------------------------------------------------
+  
   // transform string in number:
   const ratingNum = parseInt(rating);
 
@@ -30,7 +29,6 @@ const InfoAccommadation = ({
   return (
     <section className="sectionInfo">
       <div className="info">
-      <img src={cover} alt={`Couverture de ${title}`} /> 
         <h3 className="info__title">{title}</h3>
         <p className="info__location">{location}</p>
         {/* tags */}

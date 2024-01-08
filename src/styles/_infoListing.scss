@@ -1,0 +1,56 @@
+.sectionInfo{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px 10%;
+}
+  
+  
+  
+.info{
+  color: #FF6060;
+  font-weight: 900;
+  
+  &__title{
+      font-size: 36px;
+      line-height: 51px;
+      font-weight: bold;
+  }
+  &__location{
+      font-size: 18px;
+      margin-bottom: 20px;
+  }
+  &__tag{
+      color: white;
+      background-color: #FF6060;
+      border-radius: 25px;
+      padding: 5px 50px;
+      margin: 20px 10px 20px 0;
+      white-space: nowrap;
+      
+      
+  }
+}
+.host{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  h3{
+    color: #FF6060;
+      font-size: 18px;
+      font-weight: bold;
+      width: min-content;
+      text-align: end;
+  }
+  
+  img{
+      border-radius: 100%;
+      width: 64px;
+      
+  }
+}
+.rating{
+  margin-top: 15px;
+  white-space: nowrap;
+}

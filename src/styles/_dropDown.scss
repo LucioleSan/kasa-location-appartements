@@ -4,13 +4,11 @@
   width: 65%;
   transition-duration: 400ms;
   font-size: 24px;
-  background-color:#FF6060;
-  border-radius: 5px;
   
-  
-
 
 }
+
+
 
 .dropDown__header{
       display: flex;
@@ -18,8 +16,10 @@
       justify-content: space-between;
       padding: 10px;
       height: 52px;
-      cursor: pointer;
-      user-select: none;       
+      
+      user-select: none;   
+      background-color:#FF6060;  
+      border-radius: 5px;  
       
       
 }
@@ -29,7 +29,36 @@
       padding: 20px;
       font-weight: bold;
       background-color: white;
+     
       
       
       
 }
+
+
+
+.dropDownAccommodation{
+      display:flex;
+      gap:30px;
+      width:80%;
+      margin:auto;
+      border-radius: 10px;
+      .dropDown__header{
+        border-radius: 5px;
+      }
+    }
+
+    li{
+      list-style-type: none;
+    }
+
+    .dropDown__header img {
+      transition: transform 0.4s ease-in-out;
+      cursor: pointer;
+    }
+    
+    .dropDown__header img.rotated {
+      transform: rotate(-180deg);
+    }
+
+    

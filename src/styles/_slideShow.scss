@@ -1,0 +1,42 @@
+.carousel{
+  display: flex;
+  align-items: center; /* Alignement vertical */
+  justify-content: center; /* Alignement horizontal */
+  /* Autres styles... */
+  position: relative;
+  
+  width: 80%;
+  height: 415px;
+  margin: 50px 10% 50px;
+   img{
+      width: 100%;
+      height: 100%;
+      border-radius: 25px;
+      object-fit: cover;
+   }
+  p{
+      position: absolute;
+      font-size: 18px;
+      color: white;
+      z-index: 3;
+      bottom: 20px;
+      font-weight: 900;
+  }
+   .arrowRight{
+       position:absolute;
+       right: 10px;
+       z-index: 10;
+       width: 50px;
+       height: 80px;
+       cursor: pointer;
+      
+      }
+      .arrowLeft {
+          position: absolute;
+          left: 10px;
+          width: 50px;
+          height: 80px;
+          cursor: pointer;
+          
+  }
+}

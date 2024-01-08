@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import DropDown from "../components/dropdown/DropDown";
 import InfoAccommodation from "../components/infoListing/InfoListing";
+import Slideshow from "../components/slideShow/SlideShow";
 import logementsData from "../data/logements.json";
 
 const Accommodation = () => {
@@ -27,11 +28,13 @@ const Accommodation = () => {
   }
 
   // Extraction des données pour faciliter l'accès
-  const { title, location: logLocation, tags, rating, description, equipments, host, cover } = logement;
+  const { title, location: logLocation, tags, rating, description, equipments, host, pictures } = logement;
   const equipmentList = (equipments || []).map((equi, index) => <li key={index}>{equi}</li>);
   
   return (
     <main>
+      {/* Propriété pour le slideshow */}
+      <Slideshow slidesList={pictures} />
       <InfoAccommodation
         title={title}
         tags={tags || []}
@@ -39,7 +42,6 @@ const Accommodation = () => {
         rating={rating}
         name={host?.name}
         picture={host?.picture}
-        cover={cover} 
       />
 
       <section className="dropDownAccommodation">
