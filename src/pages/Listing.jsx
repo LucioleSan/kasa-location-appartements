@@ -55,7 +55,7 @@ const Accommodation = () => {
         <DropDown
           key="1"
           title="Équipements"
-          content={<ul>{equipmentList}</ul>}
+          content={equipmentList}
           isList={true}
           open={true}
         />
