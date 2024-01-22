@@ -3,32 +3,19 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
- 
-  
 
-  &__logo {
-    height: 50px; 
-    margin-left: 10%;
-  }
-
-  &__nav {
-    color: #FF6060;
-    margin-right: 7%;
-    font-size: 24px;
-    font-weight: 900;
-  }
-
-  &__link {
-    text-decoration: none;
-    margin: 0 3rem;
-    color: #FF6060;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
-
-.header__nav .header__link.active {
+ 
+.navigation ul {
+  display: flex;
+  gap: 50px;
+  font-size: 24px;
+  font-weight: 500px;
+}
+.navigation ul a {
+  text-decoration: none;
+  color: #FF6060;
+}
+.navigation ul a.active {
   text-decoration: underline;
 }
