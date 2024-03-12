@@ -48,11 +48,11 @@ const InfoAccommadation = ({
         </div>
         {/* rating */}
         <div className="rating">
-          {filledStars.map((star) => (
-            <img key={star} src={starFilled} alt="Filled Star" />
+          {filledStars.map((star, i) => (
+            <img key={i} src={starFilled} alt="Filled Star" />
           ))}
-          {emptyStars.map((star) => (
-            <img key={star} src={starEmpty} alt="Empty Star" />
+          {emptyStars.map((star, i) => (
+            <img key={i} src={starEmpty} alt="Empty Star" />
           ))}
         </div>
       </div>

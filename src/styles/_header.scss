@@ -3,19 +3,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+}
 
-}
- 
-.navigation ul {
-  display: flex;
-  gap: 50px;
-  font-size: 24px;
-  font-weight: 500px;
-}
-.navigation ul a {
-  text-decoration: none;
-  color: #FF6060;
-}
-.navigation ul a.active {
-  text-decoration: underline;
+.navigation {
+  ul {
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+    font-weight: 800;
+
+    a {
+      text-decoration: none;
+      color: #FF6060;
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
 }

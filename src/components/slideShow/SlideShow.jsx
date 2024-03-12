@@ -11,6 +11,8 @@ const Slideshow = ({ slidesList }) => {
 
   return (
     <div className="carousel">
+      {
+      slidesList.length > 1 &&
       <img
         src={arrowLeft}
         alt="fleche location précédente"
@@ -21,7 +23,10 @@ const Slideshow = ({ slidesList }) => {
         key={slidesList.id}
         loading="lazy"
       />
+    }
 
+      {
+      slidesList.length > 1 &&
       <img
         src={arrowRight}
         alt="fleche location suivante"
@@ -31,10 +36,19 @@ const Slideshow = ({ slidesList }) => {
         className="arrowRight"
         loading="lazy"
       />
+    }
 
-      <img src={currentSlide} alt={currentSlide} loading="lazy" />
-      <p>{index + 1 + "/" + length}</p>
-    </div>
+        
+        
+        <img src={currentSlide} alt={currentSlide} loading="lazy" />
+
+        {
+        slidesList.length > 1 &&
+        <p>{index + 1 + "/" + length}</p>
+      }
+
+      </div>
+      
   );
 };
 

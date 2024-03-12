@@ -8,7 +8,7 @@ const BannerImg = () => {
   const location = useLocation();
  
   const isHomePage = location.pathname === "/";
-  const showTitle = isHomePage;
+  
 
   return (
     <div className="bannerHome">
@@ -16,7 +16,7 @@ const BannerImg = () => {
       {/*Displaying either home image or about image based on isHomePage*/}
         <img src={isHomePage ? imgHome : imgAbout} alt="Banner_image" />
       </div>
-      {showTitle && (
+      {isHomePage && (
         <h1 className="mainTitle">
           Chez vous,
           <br className="br" /> partout et ailleurs
