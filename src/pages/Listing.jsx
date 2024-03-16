@@ -50,14 +50,14 @@ const Accommodation = () => {
           title="Description"
           content={description}
           isList={false}
-          open={true}
+          open={false}
         />
         <DropDown
           key="1"
           title="Équipements"
           content={equipmentList}
           isList={true}
-          open={true}
+          open={false}
         />
       </section>
     </main>

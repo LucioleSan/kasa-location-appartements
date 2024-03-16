@@ -44,7 +44,7 @@ const Slideshow = ({ slidesList }) => {
 
         {
         slidesList.length > 1 &&
-        <p>{index + 1 + "/" + length}</p>
+        <p className = "slideNumber">{index + 1 + "/" + length}</p>
       }
 
       </div>
